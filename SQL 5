@@ -1,0 +1,7 @@
+SELECT
+first_name AS 'First Name'
+, last_name AS 'Last Name'
+FROM
+dbo.people
+WHERE
+LEFT (last_name, 1) BETWEEN 'B' and 'H'
