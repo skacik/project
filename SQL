@@ -2,6 +2,6 @@ SELECT
 first_name AS 'First Name'
 ,last_name AS 'Last Name'
 , avatar AS 'Avatar'
-, CAST(bank_balance AS INT INTEGER) AS [Bank Balance]
+, CAST(bank_balance AS INTEGER) AS [Bank Balance]
 FROM
 dbo.people
