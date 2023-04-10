@@ -1,0 +1,11 @@
+SELECT
+person_id AS 'ID'
+, last_name AS 'Last Name'
+, ROUND (bank_balance, 0) AS 'Balance' 
+FROM
+  dbo.people
+WHERE
+  bank_balance < 200
+ORDER BY
+bank_balance
+, last_name 
