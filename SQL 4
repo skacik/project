@@ -1,0 +1,16 @@
+SELECT
+people.first_name AS 'First Name'
+, people.last_name AS 'Last Name'
+, vehicles.make AS 'Make'
+, vehicles.model AS 'Model'
+, vehicles.year AS 'Year'
+FROM
+people
+JOIN
+vehicle_owners
+ON people.person_id
+ = vehicle_owners.vehicle_id
+JOIN
+vehicles
+ON vehicles.vehicle_id
+ = vehicle_owners.person_id
